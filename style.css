@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Caveat", sans-serif;
+  letter-spacing: 2px;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/2923034/pexels-photo-2923034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+header {
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.tabs {
+  width: 40%;
+  padding-top: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+
+.tab {
+  background: transparent;
+  border: 2px solid white;
+  border-bottom: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.tab:hover {
+  transform: scale(1.04);
+  transition: all 0.3s;
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.content {
+  text-align: center;
+  padding: 10px;
+}
+
+.content h1 {
+  padding: 5px;
+  font-size: 2.5rem;
+}
+
+.content p {
+  padding: 10px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.home__content h1 {
+  font-size: 3rem;
+}
+
+.home__content h2 {
+  font-size: 1.9rem;
+  padding: 10px;
+}
+
+.home__content > * {
+  margin: 10px;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 0.4s;
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.menu__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 300px));
+  justify-content: center;
+  row-gap: 10px;
+  justify-content: center;
+}
+
+.menu__list ul {
+  font-size: 1.3rem;
+  list-style: none;
+  padding: 5px;
+}
+
+.menu__list h2 {
+  color: gold;
+}
+
+.about__content > p {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+.contact__content span {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  font-size: 16px;
+  position: absolute;
+  bottom: 0px;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  background-color: #202020;
+}
+
+footer a {
+  text-decoration: none;
+  color: orangered;
+}
+
+@media only screen and (max-width: 968px) {
+  .tabs {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .tab {
+    padding: 10px;
+  }
+
+  .menu__list ul {
+    font-size: 1rem;
+  }
+
+  .content h1 {
+    padding: 5px;
+    font-size: 2rem;
+  }
+
+  .content p {
+    padding: 5px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .home__content h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .tabs {
+    width: 70%;
+    font-size: 20px;
+  }
+
+  .tab {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .tabs {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .tab {
+    padding: 5px;
+  }
+}
